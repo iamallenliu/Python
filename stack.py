@@ -34,3 +34,7 @@ class mystack:
 
 stack = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 stack = mystack(stack, len(stack), 5)
+
+print(stack.stack)
+
+print(stack.stack[0])
