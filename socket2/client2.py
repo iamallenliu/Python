@@ -4,9 +4,9 @@ HOST = 'localhost'
 PORT = 12341
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 s.connect((HOST, PORT))
 
+print("Chat client started.")
 print("Enter 'q' to quit")
 
 while True:
