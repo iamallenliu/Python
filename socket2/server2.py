@@ -4,14 +4,15 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-HOST = '192.168.0.29'
+HOST = 'localhost'
 PORT = 12341
 
 s.bind((HOST, PORT))
 s.listen(0)
 
-conn, addr = s.accept()
+print("Server started.")
 
+conn, addr = s.accept()
 print('Connected by', addr)
 
 while True:
