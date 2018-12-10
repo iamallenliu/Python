@@ -15,8 +15,6 @@ print("Server started.")
 conn, addr = s.accept()
 print('Connected by', addr)
 
-print(addr)
-
 conn.sendall(b'Connection to')
 
 while True:
