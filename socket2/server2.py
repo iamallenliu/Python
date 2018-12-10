@@ -4,7 +4,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-HOST = 'localhost'
+HOST = '192.168.0.29'
 PORT = 12341
 
 s.bind((HOST, PORT))
